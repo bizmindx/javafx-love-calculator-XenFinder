@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="xenfinder.FXMLDocumentController">
+   <children>
+      <Pane layoutX="25.0" layoutY="2.0" prefHeight="600.0" prefWidth="500.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <Label fx:id="LbHeader" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="27.0" prefHeight="40.0" prefWidth="195.0" text="label" textFill="#e13d48">
+               <font>
+                  <Font name="Agency FB Bold" size="27.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" layoutX="74.0" layoutY="107.0" prefHeight="413.0" prefWidth="335.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="txtname" prefHeight="50.0" promptText="Enter Your Name">
+                     <font>
+                        <Font name="Chiller" size="23.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtxenname" prefHeight="50.0" promptText="Enter Your Xen Name">
+                     <font>
+                        <Font name="Chiller" size="23.0" />
+                     </font>
+                  </TextField>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#calculate" text="Calculate Your Love" textAlignment="CENTER" textFill="#dd1c86">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="txtresult" editable="false" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Button layoutX="322.0" layoutY="531.0" mnemonicParsing="false" onAction="#ClearResult" prefHeight="25.0" prefWidth="69.0" text="Clear">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
